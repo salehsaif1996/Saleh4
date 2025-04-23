@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>موقع صالح سيف</title>
+  <style>
+    /* Base Reset */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; }
+
+    /* Color Palette */
+    :root {
+      --primary-color: #1d3557;
+      --secondary-color: #f1faee;
+      --accent-color: #e63946;
+      --text-color: #343a40;
+    }
+
+    /* Navigation */n    nav {
+      background: var(--primary-color);
+      padding: 1rem;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav ul { display: flex; justify-content: center; list-style: none; }
+    nav ul li { margin: 0 1rem; }
+    nav ul li a {
+      color: var(--secondary-color);
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav ul li a:hover { color: var(--accent-color); }
+
+    /* Sections */
+    section { padding: 4rem 2rem; }
+    .container { max-width: 1100px; margin: auto; }
+
+    /* Header Animation */
+    .typewriter {
+      overflow: hidden;
+      border-right: .15em solid var(--accent-color);
+      white-space: nowrap;
+      animation: typing 4s steps(30, end), blink-caret .75s step-end infinite;
+      font-size: 2.5rem;
+      color: var(--primary-color);
+      margin-bottom: 1rem;
+    }
+    @keyframes typing {
+      from { width: 0 }
+      to { width: 100% }
+    }
+    @keyframes blink-caret {
+      from, to { border-color: transparent }
+      50% { border-color: var(--accent-color); }
+    }
+
+    /* Button */
+    .btn {
+      display: inline-block;
+      padding: .75rem 1.5rem;
+      background: var(--accent-color);
+      color: var(--secondary-color);
+      text-decoration: none;
+      border-radius: 2rem;
+      transition: background 0.3s;
+    }
+    .btn:hover { background: #d62828; }
+
+    /* Footer */
+    footer {
+      background: var(--text-color);
+      color: var(--secondary-color);
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+    footer a { color: var(--accent-color); text-decoration: none; }
+  </style>
+</head>
+<body dir="rtl">
+  <nav>
+    <ul>
+      <li><a href="#home">الرئيسية</a></li>
+      <li><a href="#about">من أنا</a></li>
+      <li><a href="#contact">تواصل معي</a></li>
+    </ul>
+  </nav>
+
+  <section id="home">
+    <div class="container" style="text-align: center;">
+      <h1 class="typewriter">مرحباً، أنا صالح سيف</h1>
+      <p style="color: var(--text-color); font-size: 1.2rem;">مصمم واجهات احترافية ومطور ويب ذو خبرة في تقديم حلول متكاملة وجذابة.</p>
+    </div>
+  </section>
+
+  <section id="about" style="background: var(--secondary-color);">
+    <div class="container">
+      <h2 style="color: var(--primary-color);">من أنا</h2>
+      <p style="margin-top:1rem; color: var(--text-color);">خبير في تصميم وتطوير المواقع الإلكترونية باستخدام أحدث التقنيات لضمان تجربة مستخدم سلسة وواجهات جذابة. أعمل على دمج الأناقة والوظيفة لتقديم موقع يعكس هوية عملك ويزيد من تفاعل الزوار.</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container" style="text-align: center;">
+      <h2 style="color: var(--primary-color);">تواصل معي</h2>
+      <p style="margin:1rem 0; color: var(--text-color); font-size: 1.1rem;">للطلب أو الاستفسار، يمكنكم التواصل عبر:</p>
+      <p style="font-size:1.5rem; font-weight:bold; color: var(--accent-color);">+967 774518050</p>
+      <a href="tel:+967774518050" class="btn">اتصل الآن</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 صالح سيف. كل الحقوق محفوظة.</p>
+    <p>تابعني على <a href="#">فيسبوك</a> | <a href="#">انستاجرام</a></p>
+  </footer>
+</body>
+</html>
